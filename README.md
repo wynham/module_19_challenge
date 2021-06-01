@@ -4,7 +4,7 @@ This is the repository for my module 19 challenge. In this module challenge, we 
 
 This application consists of two files: fintech_finder.py and crypto_wallet.py. We import Ethereum transaction functions from the crypto_wallet.py into our fintech_finder.py, which is the main program interface file for our Fintech Finder application.
 
-A customer is able to use the Fintech Finder application to do the folloing:
+A customer is able to do the following by using the Fintech Finder application:
 
 (1) Generate a new Ethereum account instance by using their mnemonic seed phrase.
 
@@ -20,15 +20,27 @@ A customer is able to use the Fintech Finder application to do the folloing:
 
 ## Technologies
 
-Import the following at the beginning of pychain.py file:
+Import the following at the beginning of crypto_wallet.py file:
+
+```python
+import os
+import requests
+from dotenv import load_dotenv
+load_dotenv()
+from bip44 import Wallet
+from web3 import Account
+from web3.auto.infura.kovan import w3
+from web3 import middleware
+from web3.gas_strategies.time_based import medium_gas_price_strategy
+```
+
+Import the following at the beginning of fintech_finder.py file:
 
 ```python
 import streamlit as st
 from dataclasses import dataclass
 from typing import Any, List
-import datetime as datetime
-import pandas as pd
-import hashlib
+from crypto_wallet import generate_account, get_balance, send_transaction
 ```
 
 ---
