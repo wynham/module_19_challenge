@@ -6,10 +6,15 @@ This application consists of two files: fintech_finder.py and crypto_wallet.py. 
 
 
 A customer is able to do the following by using the Fintech Finder application:
+
 (1) Generate a new Ethereum account instance by using their mnemonic seed phrase.
+
 (2) Fetch and display the account balance associated with their Ethereum account address.
+
 (3) Calculate the total value of an Ethereum transaction, including the gas estimate, that pays a Fintech Finder candidate for their work.
+
 (4) Digitally sign a transaction that pays a Fintech Finder candidate, and send this transaction to the Kovan testnet.
+
 (5) Review the transaction hash code associated with the validated blockchain transaction.
 
 ---
