@@ -46,21 +46,26 @@ from crypto_wallet import generate_account, get_balance, send_transaction
 
 ---
 
-## Example
+## Examples
 
 #### This first image shows the layout of the streamlit application.
 
-![original](./readme_images/mod_18_1.png)
+![streamlit layout](./readme_images/mod19_1.png)
 
 
-#### This next image shows what happens when the user presses 'Validate Chain'. In the Streamlit application the value True is returned, and in the terminal it states 'Blockchain is Valid'.
+#### Customer's address balance and history on Etherscan.
 
-![resampled](./readme_images/mod_18_2.png)
+![customer](./readme_images/mod19_2.png)
 
 
-#### This final image shows a close up of all the transactions in the PyChain ledger. You're able to access this by pressing the expand button in the Streamlit application
+#### Transaction details on Etherscan.
 
-![resampled](./readme_images/mod_18_3.png)
+![transaction](./readme_images/mod19_3.png)
+
+
+#### Recipient’s (fintech professional) address balance and history on Etherscan.
+
+![recipient](./readme_images/mod19_4.png)
 
 
 ---
